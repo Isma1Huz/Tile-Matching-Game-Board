@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+}
+body {
+  background: #74ebd5;
+  background-color: linear-gradient(to right, #fc5c7d, #6a82fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem ;
+  overflow-y: hidden;
+}
+.gameBox{
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(red 10%,  blue 70%, yellow 10%);    ;
+  border-radius: 15px;
+  text-align: center;
+  display: block;
+  padding: 0;
+  margin: 0;
+ 
+}
