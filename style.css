@@ -81,3 +81,55 @@ button {
 .hide {
   display: none;
 }
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -19px;
+  padding: 1rem;
+}
+.menu {
+  display: flex;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 6.5rem);
+  grid-template-rows: repeat(3, 6.5rem);
+  gap: 1rem;
+  width: 100%;
+  perspective: 800px;
+  padding: 1rem 0 0 1rem;
+  background-color: linear-gradient(to right, #fc5c7d, #6a82fb);
+  
+}
+.card {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  transform: rotateY(0deg);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+
+}
+.face, .back {
+width: 100%;
+height: 100%;
+position: absolute;
+pointer-events: none;
+}
+.back {
+  background: white;
+  backface-visibility: hidden;
+}
+
+.toggle{
+  transform: rotateY(180deg);
+}
+
