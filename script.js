@@ -130,6 +130,35 @@ randomize();
 
 
 
+// Card Generator Function
+
+const cardGenerator = () => {
+  let cardData = randomize();
+  // HTML
+  cardData.forEach((item) => {
+    const card = document.createElement("div");
+    const face = document.createElement("img");
+    const back = document.createElement("div");
+    card.classList = "card";
+    face.classList = "face";
+    back.classList = "back";
+
+    // Attach the info to the cards
+    face.src = item.image
+    card.setAttribute("name", item.name);
+    // Attach the cards to the section
+    section.appendChild(card);
+    card.appendChild(face);
+    card.appendChild(back);
+
+    card.addEventListener("click", (e) => {
+        card.classList.toggle("toggle");
+        checkCards(e);
+    })
+  })
+ 
+};
+
 
 
 
