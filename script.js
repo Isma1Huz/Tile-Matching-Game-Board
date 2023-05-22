@@ -41,3 +41,27 @@ stopBtn.addEventListener(
 
 
 
+//For timer
+const timeGenerator = () => {
+  seconds += 1;
+  //minutes logic
+  if (seconds >= 60) {
+    minutes += 1;
+    seconds = 0;
+  }
+  //format t ime before displaying
+  let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
+  let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
+  time.innerHTML = `${minutesValue}:${secondsValue}`;
+  };
+  
+  
+  
+  //Initial moves 
+  let movesCount = 0;
+  //For calculating moves
+  const movesCounter = () => {
+    movesCount += 1;
+    moves.innerHTML = `${movesCount}`;
+  };
+  
