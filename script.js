@@ -100,6 +100,46 @@ const ratingStars = () => {
 
 
 
+// Card Data
+
+const getData = () => [
+  { name: "cat", image: "./images/cat.jpeg" },
+  { name: "chicken", image: "./images/chicken.jpg" },
+  { name: "dove", image: "./images/dove.jpeg" },
+  { name: "cat", image: "./images/cat.jpeg" },
+  { name: "rat", image: "./images/rat.jpg" },
+  { name: "chicken", image: "./images/chicken.jpg" },
+  { name: "duck", image: "./images/duck.jpeg" },
+  { name: "dog", image: "./images/dog.jpg" },
+  { name: "duck", image: "./images/duck.jpeg" },
+  { name: "dove", image: "./images/dove.jpeg" },
+  { name: "dog", image: "./images/dog.jpg" },
+  { name: "rat", image: "./images/rat.jpg" },
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
