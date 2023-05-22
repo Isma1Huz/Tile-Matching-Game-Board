@@ -52,3 +52,32 @@ button {
   padding: 1em 1.5em;
   cursor: pointer;
 }
+#stopBtn {
+
+  display: block;
+  margin: 1.1em auto 0 auto;
+  background-color: orange;
+  color: #ffffff;
+  height: 2.5rem;
+  font-size: 0.9rem;
+}
+#restartBtn {
+
+  display: block;
+  margin: 1.1em auto 0 auto;
+  background-color: orange;
+  color: #ffffff;
+  height: 2.5rem;
+  font-size: 0.9rem;
+}
+.start-container button {
+  box-shadow: 1px 1px 25px 5px black,
+  -1px -1px 25px 5px black;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 10px;
+  background-color: orange;
+}
+.hide {
+  display: none;
+}
