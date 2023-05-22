@@ -1,0 +1,230 @@
+
+  * {
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+  }
+  body {
+    background: #74ebd5;
+    background-color: linear-gradient(to right, #fc5c7d, #6a82fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem ;
+    overflow-y: hidden;
+  }
+  .gameBox{
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(red 10%,  blue 70%, yellow 10%);    ;
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin: 0;
+   
+  }
+  .heading-content {
+    text-align: right;
+    margin-bottom: 1.2em;
+    width: 100%;
+    height: 23.5%;
+    padding: 1rem;
+    font-weight: bolder;
+  } 
+  h1 {
+    text-align: center;
+  }
+
+  .start-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+  }
+  button {
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+    cursor: pointer;
+  }
+  #stopBtn {
+
+    display: block;
+    margin: 1.1em auto 0 auto;
+    background-color: orange;
+    color: #ffffff;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+  #restartBtn {
+
+    display: block;
+    margin: 1.1em auto 0 auto;
+    background-color: orange;
+    color: #ffffff;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+  .start-container button {
+    box-shadow: 1px 1px 25px 5px black,
+    -1px -1px 25px 5px black;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: orange;
+  }
+  .hide {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -19px;
+    padding: 1rem;
+  }
+  .menu {
+    display: flex;
+  }
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 6.5rem);
+    grid-template-rows: repeat(3, 6.5rem);
+    gap: 1rem;
+    width: 100%;
+    perspective: 800px;
+    padding: 1rem 0 0 1rem;
+    background-color: linear-gradient(to right, #fc5c7d, #6a82fb);
+    
+}
+.card {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    transform: rotateY(0deg);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+
+}
+.face, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+.back {
+    background: white;
+    backface-visibility: hidden;
+}
+
+.toggle{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
