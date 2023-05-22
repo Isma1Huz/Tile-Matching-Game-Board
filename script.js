@@ -65,3 +65,50 @@ const timeGenerator = () => {
     moves.innerHTML = `${movesCount}`;
   };
   
+
+
+
+
+
+
+
+
+
+// Rating
+let rating;
+maxRate = 5;
+const ratingStars = () => {
+  rating = maxRate;
+  rates.innerHTML = `Rating: ${rating}`;
+  if (movesCount < 7){
+    rating = maxRate;
+    rates.innerHTML = `Rating: ${rating}`;
+  } else if(movesCount => 10 && movesCount <= 13){
+    rating = maxRate - 1;
+    rates.innerHTML = `Rating: ${rating}`;
+  }
+  else if(movesCount > 13 && movesCount <= 20){
+    rating = maxRate - 2;
+    rates.innerHTML = `Rating: ${rating}`;
+  }
+  else {
+    rating = 1;
+    rates.innerHTML = `Rating: ${rating}`;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
