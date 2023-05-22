@@ -218,6 +218,10 @@ const restart = (text) => {
 
 
 
+
+
+    
+
 }
 cardGenerator();
 
