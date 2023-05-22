@@ -199,6 +199,36 @@ const checkCards = (e) => {
 
 
 
+const restart = (text) => {
+  let cardData = randomize();
+  movesCount = 0;
+  moves.innerHTML = `${movesCount}`;
+  let faces = document.querySelectorAll(".face");
+  
+  let cards = document.querySelectorAll(".card");
+  section.style.pointerEvents = "none";
+  cardData.forEach((item, index) => {
+      cards[index].classList.remove("toggle");
+
+      // Randomize
+      setTimeout(() => {
+          cards[index].style.pointerEvents = "all";
+          faces[index].src = item.image;
+          cards[index].setAttribute("name", item.name);
+          section.style.pointerEvents = "all";
+
+      }, 1000);
+      clearInterval(interval);
+  });
+  // setTimeout(() => window.alert(text), 100);
+
+}
+
+
+
+
+
+
 
 
 
