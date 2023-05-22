@@ -119,6 +119,16 @@ const getData = () => [
 
 
 
+// Randomizing
+const randomize = () => {
+  const cardData =  getData();
+
+  cardData.sort(() => Math.random() - 0.5 );
+  return cardData;
+}
+randomize();
+
+
 
 
 
