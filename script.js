@@ -162,6 +162,39 @@ const cardGenerator = () => {
 
 
 
+// Check cards
+
+const checkCards = (e) => {
+  const clicked = e.target;
+  clicked.classList.add('flipped');
+  const flipped = document.querySelectorAll(".flipped");
+  const toggle = document.querySelectorAll(".toggle");
+  console.log(flipped);
+
+  // Tests
+  if (flipped.length === 2){
+      movesCounter();
+      ratingStars();
+      if (flipped[0].getAttribute("name") === flipped[1].getAttribute("name")) {
+              flipped.forEach((card) => {
+                  card.classList.remove("flipped");
+                  card.style.pointerEvents = "none";
+              });
+          }
+          else {
+              flipped.forEach((card) => {
+                  card.classList.remove("flipped");
+                  setTimeout(() => card.classList.remove("toggle"), 1000);
+                  if (movesCount === 20) {
+                    restart("Try Again");
+                }
+              });
+          }   
+          if (toggle.length === 12 ){
+              restart("You won");
+          }
+  }
+};
 
 
 
