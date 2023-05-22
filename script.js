@@ -220,7 +220,7 @@ const restart = (text) => {
       }, 1000);
       clearInterval(interval);
   });
-  // setTimeout(() => window.alert(text), 100);
+  setTimeout(() => window.alert(text), 100);
 
 }
 
